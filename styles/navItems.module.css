@@ -1,0 +1,30 @@
+.container {
+	font-family: sans-serif;
+}
+.container a {
+	text-decoration: none;
+}
+.container ul {
+	margin-top: 0;
+	padding-top: 8px;
+}
+.container li {
+	list-style: none;
+	padding: 11px 16px;
+}
+.container li:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+.container li a {
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+	/* padding-top: 16px; */
+	color: #3f3f44;
+	/* color: #1c1c67; */
+}
+.title {
+	padding-left: 30px;
+	font-size: 16px;
+}

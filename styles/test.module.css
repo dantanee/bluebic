@@ -1,0 +1,127 @@
+.circle {
+	width: 100%;
+}
+/* .circle {
+	position: absolute;
+	top: -50%;
+	right: 70%;
+	background: linear-gradient(
+		230deg,
+		rgba(148, 187, 233, 1) 68%,
+		rgba(238, 174, 202, 0.7) 100%
+	);
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	margin-left: 10px;
+	animation-name: ball1;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-play-state: running;
+} */
+.ball1 {
+	position: absolute;
+	top: -50%;
+	right: 70%;
+	background: linear-gradient(
+		230deg,
+		rgba(148, 187, 233, 1) 68%,
+		rgba(238, 174, 202, 0.7) 100%
+	);
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	animation-name: ball1;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-play-state: running;
+}
+
+.ball2 {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background: linear-gradient(
+		236deg,
+		rgba(250, 223, 208, 0.577468487394958) 35%,
+		rgba(250, 223, 208, 1) 100%
+	);
+	animation-name: ball2;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-play-state: running;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+}
+
+@keyframes ball1 {
+	0% {
+		top: 50%;
+		right: 70%;
+		transform: scale(1.5);
+	}
+	30% {
+		transform: scale(0.5);
+		top: 70%;
+		right: 50%;
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.25);
+		top: 70%;
+		right: 30%;
+	}
+	70% {
+		top: 60%;
+		right: 40%;
+		transform: scale(0.5);
+
+		/* top: 40%;
+		right: 50%; */
+	}
+	100% {
+		transform: scale(1.5);
+		top: 30%;
+		right: 70%;
+	}
+}
+@keyframes ball2 {
+	0% {
+		top: 50%;
+		right: 70%;
+		transform: scale(1.5);
+	}
+	30% {
+		transform: scale(0.5);
+		top: 80%;
+		right: 40%;
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.25);
+		top: 70%;
+		left: 30%;
+	}
+	70% {
+		top: 60%;
+		right: 40%;
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(1.5);
+		top: 30%;
+		right: 70%;
+	}
+}
