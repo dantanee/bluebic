@@ -8,10 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@netlify/zip-it-and-ship-it": "^2.0.2",
     "next": "10.0.4",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "^4.1.0",

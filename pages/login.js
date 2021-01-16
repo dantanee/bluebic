@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import styles from '../styles/login.module.css'
 import Head from 'next/head'
+import Link from 'next/link'
 import Nav from '../components/Nav'
 export default function Login () {
     const[open1,setOpen1] = useState(false);
@@ -77,7 +78,12 @@ export default function Login () {
                     
                     </div> 
                     <div className={styles.buttonContainer}>
-                    <button className={styles.button}>SIGN UP</button>
+                   <Link href="/mybooks"> 
+                   <a>
+                   <button className={styles.button}>SIGN UP</button>
+                   </a>
+                   </Link>
+                    
                     </div>
             </div>
             
