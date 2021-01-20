@@ -6,7 +6,8 @@ import Link from 'next/link'
 import Head from 'next/head'
 import styles from '../styles/welcome.module.css'
 import 'react-slideshow-image/dist/styles.css'
-
+import {userAuth } from '../auth'
+import Container from '../components/Container';
 const image1URL = "/images/reviews.png"
 const image2URL="/images/book.png"
 
@@ -23,9 +24,10 @@ export default function welcome () {
       const next = () => {
         slideRef.current.goNext();
       }
+      const {user} = userAuth;
     return(
-            
-            <div className={styles.contain}>
+            <Container>
+                <div className={styles.contain}>
                 <Head>
                     <title>Blue Bic</title>
                 </Head>
@@ -51,10 +53,12 @@ export default function welcome () {
                 <Link href="/">
                 <a className={styles.link}>Skip Intro</a>
                 </Link>
-                <Link href="/mybooks"><a><button className={styles.button}>VIEW TASK</button></a></Link>
+                <Link href={user ? "/mybooks":"/login"}><a><button className={styles.button}>VIEW TASK</button></a></Link>
                 </div>
                 
             </div>
         </div>
+            </Container>
+            
     )
 }
